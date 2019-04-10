@@ -8,8 +8,74 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header></header>
+    <main>
+        <article>
+            <fieldset>
+                <legend>Datos</legend>
+                <form>
+                    <label for="a">N°</label>
+                    <input type="text" class="input_form" id="num" placeholder="001">
+                    <label for="a">Ubicación</label>
+                    <input type="text" class="input_form" id="ubicacion">
+                    <br>
+                    <label for="a">Cliente</label>
+                    <input type="text" class="input_form" id="nom_cliente">
+                    <label for="a">DNI</label>
+                    <input type="text" class="input_form" id="num_dni">
+                </form>
+                <div class="left-bottom">
+                    <label for="a">Tipo</label>
+                    <select name="tipo" id="tipo">
+                        <option value="matrimonial">Matrimonial</option>
+                        <option value="economico">Economico</option>
+                    </select>
+                    <label for="a">Cant Per</label>
+                    <input type="text" id="cant_per">
+                    <br>
+                    <input type="button" id="reset" value="Reset" onclick="reset()">
+                    <input type="button" id="save" value="Guardar" onclick="save()">
+                </div>
+            </fieldset>
+        </article>
+        <aside>
+            <fieldset>
+                <legend>Datos Cliente</legend>
+                <table id="tabla_clientes">
+                    <thead>
+                        <th>N°</th>
+                        <th>Nombre</th>
+                        <th>DNI</th>
+                        <th>Fecha</th>
+                        <th>Ubicación</th>
+                    </thead>
+                    <tbody>
 
+                    </tbody>
+                </table>
+            </fieldset>
+        </aside>
+        <aside>
+            <fieldset>
+                <legend>Datos Habitaciones</legend>
+                <table id="tabla_clientes">
+                    <thead>
+                        <th>#</th>
+                        <th>Habitación</th>
+                        <th>Costo</th>
+                        <th>Cantidad</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <label for="a">Total</label>
+                <input type="text" id="total">
+            </fieldset>
+        </aside>
+    </main>
+    <footer></footer>
     <script src="js/script.js"></script>
 </body>
 </html>
